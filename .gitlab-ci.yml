@@ -1,0 +1,38 @@
+stages:
+  - test
+  - build
+  - deploy
+
+test:
+  image: node:12-alpine
+  stage: test
+  script:
+    - npm install
+    - npm run test -- --coverage
+  coverage: /All files[^|]*\|[^|]*\s+([\d\.]+)/
+
+build:
+  stage: build
+  image: registry.skyshi.io/docker-image-builder:latest
+  variables:
+    DOCKER_REGISTRY: registry.skyshi.io
+  script:
+    - ''
+  only:
+    - master
+    - development
+
+deploy:
+  stage: deploy
+  image: registry.skyshi.io/rancher-deploy:latest
+  variables:
+    STACK_NAME: advika
+    RANCHER_ACCESS_KEY: 7883945FF628446F34F6
+    RANCHER_ENVIRONMENT: staging
+    RANCHER_SECRET_KEY: HpMvXcp7ZmbrWEw9K1wazk6e2pbJ6TCT3wiLL37m
+    RANCHER_URL: https://rancher.skyshi.io/v1
+    DOCKER_REGISTRY: registry.skyshi.io
+  script:
+    - ''
+  only:
+    - development

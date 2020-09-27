@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+  web:
+    image: $PROJECT_IMAGE_URL:$TAG
+    expose:
+      - 3000
+    environment:
+      PORT: 3000
+      HOST: 0.0.0.0
+      API_URL: https://api.advika.project.skyshi.io
+      DSN_URL: https://da1594e365d4409e84eadf81dd567a3b@o321297.ingest.sentry.io/5415758
+    labels:
+      rap.host: dashboard.advika.project.skyshi.io
+      rap.le_host: dashboard.advika.project.skyshi.io
+      rap.port: 3000

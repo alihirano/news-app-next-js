@@ -1,0 +1,105 @@
+.form-sm {
+  >span {
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  .react-datepicker-wrapper {
+    width: 100%;
+    margin-bottom: 2px;
+
+    .react-datepicker__close-icon {
+      display: none;
+    }
+  }
+
+  .textarea-post {
+    margin-left: 0 !important;
+  }
+
+  &.ad {
+    padding-left: 10px;
+
+    .form-sm {
+      label {
+        display: none !important;
+      }
+
+      .textarea-post {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.action-wrapper {
+  display: block;
+  width: 100%;
+}
+
+.btn {
+  &.btn-yellow {
+    color: #600973 !important;
+  }
+}
+
+.list-agent li .agent-pict {
+  overflow: hidden;
+}
+
+.filter-wrapper {
+  .dropdown {
+    .dropdown-menu {
+      .action-wrapper {
+        a {
+          &:hover {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+}
+
+// ticket search
+.dropdown-content {
+  .data-agent {
+    p {
+      position: relative;
+      padding-left: 32px;
+      display: block;
+      min-height: 18px;
+
+      span {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+}
+
+// ticket
+.search-ticket {
+  .dropbtn-input {
+    color: #4F4F4F;
+  }
+
+  button {
+    &.dropbtn {
+      position: absolute;
+      width: 39px;
+      height: 40px;
+      top: 0px;
+      right: 0px;
+    }
+  }
+}
+
+.account-channel {
+  .sidebar-left {
+    .sidebar-menu {
+      overflow: hidden;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.empty-wrapper {
+  background-color: $white;
+  text-align: center;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  box-shadow: $box-shadow-tbody;
+  border-radius: 10px;
+
+  &.no-shadow {
+    box-shadow: none;
+  }
+
+  .empty-state {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+
+    img {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20px;
+      max-width: 70%;
+    }
+
+    p {
+      margin-bottom: 0;
+      line-height: 24px;
+      color: $border-input;
+      font-weight: 400;
+    }
+  }
+}
+
+.ticket-dashboard {
+  .empty-wrapper {
+    height: 65vh;
+  }
+}

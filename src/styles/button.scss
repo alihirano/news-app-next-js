@@ -1,0 +1,67 @@
+.btn {
+  &.btn-cancel {
+    background-color: $bg-input-file;
+    color: $body-color;
+
+    &:hover {
+      background-color: $color-icon;
+    }
+  }
+
+  &.disabled {
+    background-color: $color-icon;
+    border-color: $text-grey-light;
+    color: $text-grey-light;
+    pointer-events: none;
+
+    i {
+      color: $text-grey-light;
+    }
+
+    &:hover,
+    focus {
+      background-color: $color-icon;
+      border-color: $text-grey-light;
+      color: $text-grey-light;
+
+      i {
+        color: $text-grey-light;
+      }
+    }
+  }
+}
+
+.custom-select {
+  &:disabled {
+    background-color: $color-icon;
+    border-color: $text-light;
+    color: $text-light;
+  }
+}
+
+.btn-marked {
+  &.marked {
+    i {
+      color: #ffd301;
+    }
+  }
+}
+
+.sign-escalation {
+  background-color: #e7f1f8;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 200px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  i.escalation {
+    width: 13px;
+    height: 13px;
+    background-image: url('/images/escalation.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}

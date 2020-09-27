@@ -1,0 +1,371 @@
+.ticket-dashboard {
+  &.report {
+    .tab-content {
+      padding: 10px 20px;
+    }
+
+    .custom-select {
+      &:focus,
+      &:hover {
+        box-shadow: none;
+      }
+    }
+
+    .range-info {
+      font-size: 14px;
+      font-weight: 700;
+      color: #4f4f4f;
+      margin-top: 8px;
+      margin-left: 40px;
+    }
+
+    .chart-wrapper {
+      padding-top: 0;
+
+      .recharts-wrapper {
+        margin: 0 auto;
+      }
+    }
+
+    .filter-chart {
+      padding: 10px 20px 20px 20px;
+      margin: -10px -20px 0 -20px;
+      background-color: #fbfbfb;
+
+      > .form-inline {
+        margin-bottom: 0;
+
+        .btn {
+          margin-top: 25px;
+        }
+
+        .input-group {
+          &:first-child {
+            width: 220px;
+          }
+
+          &:nth-child(4) {
+            width: 110px;
+          }
+
+          label {
+            display: block;
+            width: 100%;
+            font-size: 14px;
+            margin-top: 0;
+            margin-bottom: 8px;
+            font-weight: 600;
+          }
+
+          &:nth-child(2) {
+            width: 140px;
+          }
+
+          &.form-sm {
+            width: 140px;
+          }
+        }
+
+        > .form-inline {
+          .input-group {
+            &.schedule-form {
+              width: 160px;
+
+              label {
+                display: block;
+                width: 100%;
+                font-size: 14px;
+                margin-top: 0;
+                margin-bottom: 8px;
+                font-weight: 600;
+              }
+
+              .form-control {
+                border-radius: 5px;
+                width: 100%;
+                margin-top: 0;
+                border: 1px solid #bdbdbd;
+              }
+
+              .react-datepicker-wrapper {
+                display: block;
+                width: 100%;
+
+                .form-control {
+                  width: 100%;
+                  border-radius: 4px;
+                  border: 1px solid #bdbdbd;
+                  padding-left: 30px;
+                  margin-top: 0;
+                }
+
+                button {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .input-group {
+        .form-control {
+          border-radius: 5px;
+          width: 100%;
+          margin-top: 0;
+          border: 1px solid #bdbdbd;
+        }
+      }
+    }
+
+    #responseRate {
+      .filter-chart {
+        .input-group {
+          &:nth-child(3) {
+            width: 155px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.react-datepicker-wrapper {
+  input {
+    background-position: 8px;
+    background-size: 15px 17px;
+    background-repeat: no-repeat;
+    padding-left: 36px;
+  }
+}
+
+.recharts-wrapper {
+  width: 1200px !important;
+}
+
+.table {
+  &.table-report {
+    .thead-light {
+      tr {
+        th {
+          @media (max-width: 1280px) {
+            padding: 20px 4px;
+          }
+
+          &:first-child {
+            width: 200px;
+
+            @media (max-width: 1280px) {
+              width: 180px;
+            }
+          }
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        td {
+          &:first-child {
+            position: relative;
+            padding-left: 55px;
+
+            .pict {
+              position: absolute;
+              top: 20px;
+              left: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.agent-report {
+    thead {
+      tr {
+        th {
+          text-align: center;
+          border: none;
+          background-color: #e7f1f8;
+          padding: 20px 8px;
+          font-weight: 500;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        border: none;
+
+        td {
+          position: relative;
+          font-weight: 400;
+          padding: 30px 15px;
+          border-bottom: 1px solid #e0e0e0;
+
+          h3 {
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 0;
+
+            .prov-logo {
+              width: 20px;
+              height: 20px;
+              border-radius: 200px;
+              line-height: 0px;
+              overflow: hidden;
+              display: inline-block;
+              vertical-align: middle;
+              margin-right: 15px;
+            }
+          }
+
+          .total-ticket {
+            margin: 0 auto 0 auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+// team agen
+.header-info {
+  a {
+    color: #ffffff !important;
+    text-decoration: underline !important;
+  }
+}
+
+.team-agent {
+  .empty {
+    color: #4f4f4f;
+    font-size: 10px;
+
+    i {
+      color: #bdbdbd;
+      vertical-align: middle;
+      font-size: 20px;
+      transform: scaleX(-1);
+      -moz-transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+      -ms-transform: scaleX(-1);
+    }
+  }
+}
+
+.merchant-wrapper {
+  a {
+    color: #fd7e14 !important;
+
+    &:hover {
+      color: #ffffff !important;
+    }
+  }
+}
+
+.table {
+  &.table-report {
+    tbody {
+      > tr {
+        > td {
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+      }
+    }
+  }
+}
+
+// ticket
+.ticket-wrapper {
+  .ticket-body {
+    .comment-wrapper {
+      .author-wrapper {
+        .author-desc {
+          .btn-reply {
+            margin-right: 5px;
+          }
+
+          .btn-orange {
+            color: #ffffff !important;
+            font-size: 12px;
+          }
+        }
+      }
+
+      .user-comment {
+        p {
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  .title-ticket {
+    .bloked-info {
+      i {
+        color: #b6c2d6;
+        margin-top: 3px;
+        font-size: 18px;
+      }
+
+      &.blacklist {
+        i {
+          color: #eb5757;
+        }
+      }
+    }
+  }
+}
+
+.response-rate {
+  .table {
+    &.table-report {
+      tbody {
+        tr {
+          td {
+            span {
+              display: block;
+              line-height: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.modal {
+  .modal-dialog {
+    .modal-content {
+      .modal-body {
+        > .ticket-wrapper {
+          .ticket-body {
+            .chat-timeline {
+              .message-left {
+                .chat-message {
+                  margin-bottom: 48px;
+                  .user-chat {
+                    text-align: left;
+                    bottom: -32px;
+                    min-width: 135px;
+                  }
+                }
+              }
+              .message-right {
+                .chat-message {
+                  margin-bottom: 48px;
+                  .user-chat {
+                    min-width: 135px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
